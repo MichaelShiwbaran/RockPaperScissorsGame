@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors Game</h1>
+    <div class="row game-labels">
+      <div class="col-5">You</div>
+      <div class="col-2"></div>
+      <div class="col-5">The Computer</div>
+    </div>
+
+    <div class="row game">
+      <div class="col-5">
+         <!--Placeholder Element for Player’s Choice-->
+      </div>
+      <div class="col-2">vs</div>
+      <div class="col-5">
+      <img id="userChoice" src="">
+         <!--Placeholder Element for Computer’s Choice-->
+      <img id="computerChoice" src="">
+      </div>
+    </div>
+    <!--User Selection-->
+    <p>Choose Your Move</p>
+    <div class="row" >
+      <div class="col-4">
+        <img src="rock.png" width= "100px" height= "100px" onclick="checkResult(1)">
+       <h1> 1 </h1>
+      </div>
+      <div class="col-4">
+        <img src="paper.png" width= "100px" height= "100px"onclick="checkResult(2)">
+       <h1> 2 </h1>
+      </div>
+      <div class="col-4">
+        <img src="scissors.png" width= "100px" height= "100px"onclick="checkResult(3)">
+       <h1> 3 </h1>
+      </div>
+    </div>
+   <h2 class="result"></h2>
+  </div>
+</body>
+</html>
+
